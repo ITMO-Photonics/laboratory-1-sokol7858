@@ -12,7 +12,7 @@ def task3(n):
         B[k,0]=k
     return A, B
 
-A, B = task3(10)
+A, B = task3(100)
 
 solve=linalg.solve(A,B)
 
