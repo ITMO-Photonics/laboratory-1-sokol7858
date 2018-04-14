@@ -6,8 +6,8 @@ def fun(x):
 
 brentq_root=opt.brentq(fun,0.1,2.4)
 bisect_root=opt.bisect(fun,0.1,2.4)
-newton1_root=opt.newton(fun, 0.5, fprime = lambda x: -(((x**2+1)*np.sin(x)+2*x*np.cos(x))/((x**2+1)**2)))
-newton2_root=opt.newton(fun, 0.5)
+newton1_root=opt.newton(fun, 1.5, fprime = lambda x: -(((x**2+1)*np.sin(x)+2*x*np.cos(x))/((x**2+1)**2)))
+newton2_root=opt.newton(fun, 1.5)
 
 print('brentq_root =',brentq_root)
 get_ipython().run_line_magic('timeit', 'opt.brentq(fun,0.1,2.4)')

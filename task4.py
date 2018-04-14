@@ -8,7 +8,8 @@ def task4(n,k):
     B=k/(1+k*t)
     return A, B
 
-A, B=task4(100,1)
+
+A,B =task4(100,1)
 
 x1=linalg.solve(A,B)
 
